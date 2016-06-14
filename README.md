@@ -1,8 +1,8 @@
-== README
+#SimpleCafe
+This is simple cafe project.
+This project was made as a Ruby on Rails and styled using Bootstrap.
 
-This is simple cafe project. This project was made as a Ruby on Rails and styled using Bootstrap.
-
-Site functions are
+#Site functions are
 - Management bulletins
 - View bulletin`s page: Page format: gallety, blog and news.
 - Upload post to bulletin
@@ -10,11 +10,11 @@ Site functions are
 - Add tags
 - View post by tag
 
-There are special emphasis on 
-- Image Uploding using 'carrierwave' gem and 'mini-magick' gem,
-- Add Tags using 'acts-as-taggable-on' gem,
-- Font Icons using 'font-awesome-rails' gem,
-- Bootstarp using  'bootstrap-sass' gem and 'simple_form' gem.
+#There are special emphasis on 
+- Image Uploding using 'carrierwave' gem and 'mini-magick' gem
+- Add Tags using 'acts-as-taggable-on' gem
+- Font Icons using 'font-awesome-rails' gem
+- Bootstarp using  'bootstrap-sass' gem and 'simple_form' gem
 
-System dependencies:
+#System dependencies
 Before running this project, you must installed Imagemagick and Ghostscript on your server.
