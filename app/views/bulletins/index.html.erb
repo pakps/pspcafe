@@ -1,0 +1,33 @@
+<h2>Listing Bulletins</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>PostType</th>
+      <!--th>Description</th-->
+      <th>Data actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bulletins.each do |bulletin| %>
+      <tr>
+        <td><%= bulletin.id %></td>
+        <td><%= bulletin.title %></td>
+        <td><%= bulletin.post_type %></td>
+        <!--td><%= bulletin.description %></td-->
+        <td>
+        	<%= link_to 'Show', bulletin, class: 'btn btn-default' %>
+			<%= link_to 'Edit', edit_bulletin_path(bulletin), class: 'btn btn-default' %>
+			<%= link_to 'Destroy', bulletin, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default' %>
+		</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bulletin', new_bulletin_path, class: 'btn btn-default' %>
