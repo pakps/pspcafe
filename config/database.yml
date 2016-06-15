@@ -24,8 +24,3 @@ production:
   adapter: postgresql
   encoding: uniocode
   databse: d5i1imnesmca96
-  username: ndiegdvhqbiccz
-  passworrd: veBRbRv3hxsipKmIj5S9lFR4zT
-  host: ec2-54-243-249-154.compute-1.amazonaws.com
-  post: 5432
-  
