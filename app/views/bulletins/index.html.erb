@@ -12,8 +12,19 @@
   </thead>
 
   <tbody>
-  	Bulletins: <%= @bulletins.size %>
-    
+    <% @bulletins.each do |bulletin| %>
+      <tr>
+        <td><%= bulletin.id %></td>
+        <td><%= bulletin.title %></td>
+        <td><%= bulletin.post_type %></td>
+        <!--td><%= bulletin.description %></td-->
+        <td>
+        	<%= link_to 'Show', bulletin, class: 'btn btn-default' %>
+			<%= link_to 'Edit', edit_bulletin_path(bulletin), class: 'btn btn-default' %>
+			<%= link_to 'Destroy', bulletin, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default' %>
+		</td>
+      </tr>
+    <% end %>
   </tbody>
 </table>
 
