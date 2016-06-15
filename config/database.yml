@@ -22,5 +22,5 @@ test:
 
 production:
   adapter: postgresql
-  encoding: uniocode
+  encoding: unicode
   databse: d5i1imnesmca96
